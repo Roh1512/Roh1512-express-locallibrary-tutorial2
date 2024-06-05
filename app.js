@@ -23,7 +23,7 @@ const mongoose = require("mongoose");
 mongoose.set("strictQuery", false); //Remove proprietery warning for mongoose 7
 
 const dev_db_url = "noneing";
-const mongodb = process.env.MONGODB_URO || dev_db_url;
+const mongodb = process.env.MONGODB_URI || dev_db_url;
 
 main().catch((err) => console.log(`Connection Error: ${err}`));
 async function main() {
