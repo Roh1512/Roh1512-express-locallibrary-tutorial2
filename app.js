@@ -22,7 +22,8 @@ const limiter = RateLimit({
 const mongoose = require("mongoose");
 mongoose.set("strictQuery", false); //Remove proprietery warning for mongoose 7
 
-const dev_db_url = "noneing";
+const dev_db_url =
+  "mongodb+srv://rohithashok19:1327RoH@cluster0.ufihtan.mongodb.net/local_library?retryWrites=true&w=majority&appName=Cluster0";
 const mongodb = process.env.MONGODB_URI || dev_db_url;
 
 main().catch((err) => console.log(`Connection Error: ${err}`));
